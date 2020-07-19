@@ -16,7 +16,7 @@ function do_update() {
                     // document.getElementById.innerHTML = ...
                     break;
                 case 0: // if the server goes away, 0 is returned(?) - unless a timeout happens first...
-                    // how is this different from a timeout?  
+                    // how is this different from a timeout?   
                     // handle the server going away
                     break;
                 default: // not a success 
