@@ -9,10 +9,11 @@ function do_update() {
         // 2 HEADERS_RECEIVED 	send() has been called, and headers and status are available.
         // 3 LOADING 	        Downloading; responseText holds partial data.
 		if (xmlhttp.readyState==4) {
-            // and we could look for other readtState values besides 200 and 0
+            // and we could look for other readyState values besides 200 and 0
             switch(xmlhttp.status) {
                 case 200: // success
                     // look at xmlhttp.responseText
+                    // document.getElementById.innerHTML = ...
                     break;
                 case 0: // if the server goes away, 0 is returned(?) - unless a timeout happens first...
                     // how is this different from a timeout?  
