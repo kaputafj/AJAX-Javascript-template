@@ -8,7 +8,7 @@ function do_update() {
         // 1 OPENED 	        open() has been called.
         // 2 HEADERS_RECEIVED 	send() has been called, and headers and status are available.
         // 3 LOADING 	        Downloading; responseText holds partial data.
-		if (xmlhttp.readyState==4) {
+	if (xmlhttp.readyState==4) {
             // and we could look for other readyState values besides 200 and 0
             switch(xmlhttp.status) {
                 case 200: // success
